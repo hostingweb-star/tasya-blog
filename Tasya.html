@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog Basis Data - UBP Karawang</title>
+  <style>
+    body {
+      font-family: "Poppins", sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #ffe6f9, #f3e5f5);
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(135deg, #d63384, #6f42c1);
+      color: white;
+      padding: 10px;
+      text-align: center;
+      border-bottom-left-radius: 40px;
+      border-bottom-right-radius: 40px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+
+    header h1 {
+      margin : 10px;
+      font-size: 4.0em;
+    }
+
+    nav {
+      background: #f8bbd0;
+      padding: 12px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    nav a {
+      color: #6f42c1;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: all 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #d63384;
+      text-shadow: 0px 0px 8px rgba(214, 51, 132, 0.6);
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 25px auto;
+      background: white;
+      padding: 20px;
+      border-radius: 20px;
+      box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .container:hover {
+      transform: translateY(-5px);
+      box-shadow: 0px 8px 18px rgba(0,0,0,0.15);
+    }
+
+    h2 {
+      color: #d63384;
+      border-left: 5px solid #6f42c1;
+      padding-left: 10px;
+    }
+
+    ul {
+      margin: 10px 0;
+      padding-left: 20px;
+    }
+
+    pre {
+      background: #f3e5f5;
+      padding: 10px;
+      border-radius: 10px;
+      overflow-x: auto;
+      color: #6f42c1;
+      font-weight: bold;
+    }
+
+    footer {
+      background: linear-gradient(135deg, #6f42c1, #d63384);
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 20px;
+      border-top-left-radius: 30px;
+      border-top-right-radius: 30px;
+    }
+
+    footer a {
+      color: #ffe6f9;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Blog Basis Data</h1>
+    <div style="background: transparent;">
+  <img src="image2.png" alt="Foto" style="text-align: right;background: transparent; max-width: 300px;">
+  <img src="image1.png" alt="Foto" style="text-align: center; background: transparent; max-width: 700px;">
+  <img src="image2.png" alt="Foto" style="text-align: left;background: transparent; max-width: 300px;">
+</div>
+    <p>Nama : Tasya Dwi Cahyani</p>
+    <p>NIM : 24416255201252</p>
+    <p>if24.tasyacahyani@mhs.ubpkarawang.ac.id</p>
+  </header>
+
+  <nav>
+    <a href="#post1">Post 1</a>
+    <a href="#post2">Post 2</a>
+    <a href="#post3">Post 3</a>
+    <a href="#post4">Post 4</a>
+  </nav>
+
+  <div class="container" id="post1">
+    <h2>Post 1: Apa yang Anda Harapkan dari MK Basis Data</h2>
+    <p>
+      Saya berharap dari mata kuliah Basis Data bisa memahami bagaimana data disimpan,
+      diolah, dan dikelola dengan baik. Selain itu, saya ingin belajar praktik langsung
+      dalam membuat, mengelola, serta mengoptimalkan database yang efisien.
+    </p>
+    <ul>
+      <li>Merancang struktur database sesuai kebutuhan aplikasi.</li>
+      <li>Menguasai SQL untuk mengakses dan mengolah data.</li>
+      <li>Memahami normalisasi agar database tidak redundan.</li>
+      <li>Menerapkan basis data dalam proyek nyata.</li>
+    </ul>
+  </div>
+
+  <div class="container" id="post2">
+    <h2>Post 2: Apa itu Basis Data</h2>
+    <p>
+      Basis Data adalah kumpulan data yang terorganisir, tersimpan, dan dapat diakses secara sistematis
+      dengan bantuan komputer. Contoh basis data ada pada perbankan, e-commerce, dan sistem akademik kampus.
+    </p>
+  </div>
+
+  <div class="container" id="post3">
+    <h2>Post 3: Apa itu Conceptual DB</h2>
+    <p>
+      Conceptual Database atau model konseptual adalah tahap perancangan database yang menggambarkan
+      struktur logis data tanpa detail teknis. Biasanya divisualisasikan dengan ERD (Entity Relationship Diagram),
+      berisi entitas, atribut, dan relasi antar entitas.
+    </p>
+    <p>
+      Contoh: Mahasiswa mengambil Mata Kuliah, Dosen mengajar Mata Kuliah.
+    </p>
+  </div>
+
+  <div class="container" id="post4">
+    <h2>Post 4: Apa itu Physical Model</h2>
+    <p>
+      Physical Model adalah tahap teknis, di mana struktur konseptual database diterjemahkan
+      menjadi implementasi nyata di DBMS. Ditentukan tipe data, struktur tabel, kunci primer, 
+      dan aturan integritas.
+    </p>
+    <pre>
+CREATE TABLE Mahasiswa (
+    NIM VARCHAR(10) PRIMARY KEY,
+    Nama VARCHAR(50),
+    Tanggal_Lahir DATE,
+    Prodi VARCHAR(30)
+);
+    </pre>
+  </div>
+
+  <footer>
+    <p>© 2025 Blog Basis Data | <a href="https://www.ubpkarawang.ac.id" target="_blank">UBP Karawang</a></p>
+  </footer>
+
+</body>
+</html>
