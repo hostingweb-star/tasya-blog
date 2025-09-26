@@ -15,17 +15,25 @@
     header {
       background: linear-gradient(135deg, #d63384, #6f42c1);
       color: white;
-      padding: 10px;
+      padding: 20px;
       text-align: center;
-      border-bottom-left-radius: 40px;
-      border-bottom-right-radius: 40px;
+      border-bottom-left-radius: 30px;
+      border-bottom-right-radius: 30px;
       box-shadow: 0 4px 12px rgba(0,0,0,0.2);
     }
 
     header h1 {
-      margin : 10px;
-      font-size: 4.0em;
+      font-family: 'Dancing Script', cursive;
+      font-size: 48px;
+      color: #ffffff;
+      text-align: center;
+      text-shadow: 
+        2px 2px 0 #ff0095,
+        -2px -2px 0 #a64ca6,
+        2px -2px 0 #a64ca6,
+        -2px  2px 0 #d63384;
     }
+
 
     nav {
       background: #f8bbd0;
@@ -109,15 +117,14 @@
 <body>
 
   <header>
-    <h1>Blog Basis Data</h1>
+    <h1>✨Blog Basis Data✨</h1>
     <div style="background: transparent;">
-  <img src="image2.png" alt="Foto" style="text-align: right;background: transparent; max-width: 300px;">
   <img src="image1.png" alt="Foto" style="text-align: center; background: transparent; max-width: 700px;">
-  <img src="image2.png" alt="Foto" style="text-align: left;background: transparent; max-width: 300px;">
 </div>
-    <p>Nama : Tasya Dwi Cahyani</p>
-    <p>NIM : 24416255201252</p>
-    <p>if24.tasyacahyani@mhs.ubpkarawang.ac.id</p>
+    <p><u>🌸Nama : Tasya Dwi Cahyani</u></p>
+    <p><u>🌷NIM : 24416255201252</u></p>
+    <p><u>💐if24.tasyacahyani@mhs.ubpkarawang.ac.id</u></p>
+    <p>🍒UBP Karawang🍒</p>
   </header>
 
   <nav>
